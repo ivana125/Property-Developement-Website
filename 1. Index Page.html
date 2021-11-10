@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*Style the image*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>KAVALA</h1>
+  <p>A <b>Property Developement</b> Company of England</p>
+  <img src="D:\web project\layout 1 (004).jpg" alt="layout02(2)" width="1000" height="300">
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="D:\web project\Building a new home.html">Building A New Home</a>
+  <a href="D:\web project\sheet 10 v1.pdf">View Architechture</a>
+  <a href="D:\web project\sheet 10 v2.pdf">View Architechture plan in details</a>
+  <a href="D:\web project\Log-In.html" class="right">Contact</a>
+  <a href="D:\web project\new 1.html" class="right">More</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Us</h2>
+    <h5>KAVALA</h5>
+	<img src="D:\web project\layout 1 (04).jpg"" alt="Frontview" width="600" height="400">
+    <p>KAVALA is a fast growing, privately owned developer of homes in London and the South East of England. We have a reputation of building outstanding homes that exude individuality, style and sustainability.
+
+</p>
+    <h3>More......</h3>
+    <p>Our company philosophy is to construct homes and provide a service which exceeds expectations.We provide unique design for buid your home.</p>
+    <div class="fakeimg" style="height:60px;">Ground Floor</div><br>
+	<img src="D:\web project\010.jpg" alt="Ground Floor" width="600" height="400">
+    <div class="fakeimg" style="height:60px;">First & Second Floor</div><br>
+	<img src="D:\web project\011.jpg" alt="First & Second Floor" width="600" height="400">
+  </div>
+  <div class="main">
+    <h2><b>Providing High Quality Modern Homes .....</b></h2>
+    <h5>Last Update: Nov 7, 2021</h5>
+	<img src="D:\web project\layout 02 (001).jpg" alt="Backview" width="600" height="400">
+    <p><i>KAVALA has grown a reputation of building and refurbishing high quality modern homes in London and the South East of England. Our company specialises in obtaining planning permissions for the redevelopment of existing property and back gardens, and other buildings on brownfield land. We believe our experience, enthusiasm and innovative approach to projects ensures that we retain our successful reputation.</i></p>
+
+    <br>
+    <h2><b>Why Choose Us?</b></h2>
+    <h5>Last Update: Nov 7, 2021</h5>
+	<img src="D:\web project\layout 1 (04).jpg"" alt="Frontview" width="600" height="400">
+    <p><i>Over the years we have become well recognised for our attention to quality and detail, as well as our focused approach to customer care. KAVALA has built up excellent working relationships with land owners, offering each client a first class service and as our testimonials allude, this is something which hasn’t gone unnoticed.</i></p>
+</p>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Sponsorship</h2>
+  <h3>Company 1</h1>
+  <h3>Company 2</h1>
+  <p>Note: This is an example of property development website.(Author:Ivana Shahrear)</p>
+  
+</div>
+
+</body>
+</html>
